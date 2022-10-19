@@ -11,7 +11,11 @@
 
 # How to Run quicksort.c
 
-1. command to compile: mpicc -o quicksort quicksort.c -std=c99
-2. command to run: mpirun -np <num_process> ./quicksort <input_filename> <output_filename>
+1. command to compile:
+
+## mpicc -o quicksort quicksort.c -std=c99
+
+2. command to run:
+   ##mpirun -np <num_process> ./quicksort <input_filename> <output_filename>
    (e.g. mpirun -np 4 ./quicksort input.txt output.txt)
 3. It will use the numbers in input file, and put the sorted result in the output file (generated if not exists)
