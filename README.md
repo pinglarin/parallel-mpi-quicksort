@@ -9,6 +9,18 @@
 3. If the number on each node is below a threshold, say 1000, you can call another
    sorting function to sort those numbers locally
 
+# How to Run generate_data.py
+
+```
+python generate_data.py
+```
+
+or (MacOS)
+
+```
+python3 generate_data.py
+```
+
 # How to Run quicksort.c
 
 1. command to compile:
