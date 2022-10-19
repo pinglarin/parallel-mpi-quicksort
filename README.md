@@ -11,6 +11,9 @@
 
 # How to Run generate_data.py
 
+1. specify total number (1000, 100000, and 1 million) in the total_number var
+2. specify filename to be generated in filename var
+
 ```
 python generate_data.py
 ```
