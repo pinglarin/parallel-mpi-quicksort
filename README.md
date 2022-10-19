@@ -8,3 +8,10 @@
    plot one graph having all results.
 3. If the number on each node is below a threshold, say 1000, you can call another
    sorting function to sort those numbers locally
+
+# How to Run quicksort.c
+
+1. command to compile: mpicc -o quicksort quicksort.c -std=c99
+2. command to run: mpirun -np <num_process> ./quicksort <input_filename> <output_filename>
+   (e.g. mpirun -np 4 ./quicksort input.txt output.txt)
+3. It will use the numbers in input file, and put the sorted result in the output file (generated if not exists)
