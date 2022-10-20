@@ -25,6 +25,8 @@ or (MacOS)
 python3 generate_data.py
 ```
 
+The first number in the output file is the total number (1000, 100000, and 1 million)
+
 # How to Run quicksort.c
 
 1. command to compile:
