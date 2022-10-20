@@ -1,6 +1,6 @@
 import random
-total_number = 100
-filename = 'input.txt'
+total_number = 1000000
+filename = 'input1000000.txt'
 str_all = str(total_number) + " "
 
 for i in range(0, total_number):
