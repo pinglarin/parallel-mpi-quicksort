@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2022-10-20T22:36:38.644Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="2T9-uAVLbd1bm-Ae6ELZ" version="20.4.2" type="google">
+  <diagram id="62in9tTMBIE07a8g1LVH" name="Page-1">
+    <mxGraphModel dx="5936" dy="5928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nDUVULAMzxckf4UcZJE2-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-1" target="nDUVULAMzxckf4UcZJE2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-1" value="Create all necessary variables" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-2" target="nDUVULAMzxckf4UcZJE2-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-11" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-10">
+          <mxGeometry x="-0.05" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-2" target="nDUVULAMzxckf4UcZJE2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-15" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-14">
+          <mxGeometry x="-0.04" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-2" value="Are the arguments &lt;br&gt;in required format?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="37.5" y="110" width="165" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-4" target="nDUVULAMzxckf4UcZJE2-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-4" value="Initialize MPI processes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-6" target="nDUVULAMzxckf4UcZJE2-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-6" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="92.5" y="-150" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-12" target="nDUVULAMzxckf4UcZJE2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-12" value="Raise error" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-16" value="Abort" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="420" y="125" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-19" target="nDUVULAMzxckf4UcZJE2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-19" value="Receive input from specified file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="-70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-34" target="nDUVULAMzxckf4UcZJE2-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-49" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-44">
+          <mxGeometry x="-0.2898" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-56" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-54">
+          <mxGeometry x="-0.4325" y="-1" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-34" value="Is this the root&lt;br&gt;process?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53.75" y="320" width="132.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-36" target="nDUVULAMzxckf4UcZJE2-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-36" value="Read number of elements from input file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-38" target="nDUVULAMzxckf4UcZJE2-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-38" value="Compute chunk size&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-39" target="nDUVULAMzxckf4UcZJE2-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-39" value="Read unsorted numbers from the input file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-41" target="nDUVULAMzxckf4UcZJE2-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-41" value="Padding data with zero&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-43" target="nDUVULAMzxckf4UcZJE2-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-43" value="Read number of elements from input file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-52" value="" style="shape=link;html=1;rounded=0;width=17.69230769230769;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="40" y="440" as="sourcePoint" />
+            <mxPoint x="200" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-53" value="&amp;nbsp;Barrier&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-52">
+          <mxGeometry x="-0.05" y="1" relative="1" as="geometry">
+            <mxPoint x="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-55" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="450" as="sourcePoint" />
+            <mxPoint x="119.58" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-57" target="nDUVULAMzxckf4UcZJE2-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-57" value="Root process broadcast size to other processes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-59" target="nDUVULAMzxckf4UcZJE2-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-59" value="Compute chunk size (in bits)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-61" target="nDUVULAMzxckf4UcZJE2-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-61" value="Scatter chunk size to all processes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-62" target="nDUVULAMzxckf4UcZJE2-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-62" value="Each process compute local &lt;br&gt;chunk size&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-63" target="nDUVULAMzxckf4UcZJE2-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-63" value="Sort arrays using quick sort for every local chunk" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-66" target="nDUVULAMzxckf4UcZJE2-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-79" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-70">
+          <mxGeometry x="-0.1163" y="6" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-66" target="nDUVULAMzxckf4UcZJE2-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-80" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nDUVULAMzxckf4UcZJE2-76">
+          <mxGeometry x="-0.2866" y="3" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-66" value="Has all elements&lt;br&gt;&amp;nbsp;been merged?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="36.88" y="660" width="166.25" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-67" target="nDUVULAMzxckf4UcZJE2-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-67" value="Write sorted array onto output file" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-68" target="nDUVULAMzxckf4UcZJE2-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-68" value="Each process send sorted chuck to a process with lower rank" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="670" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-69" target="nDUVULAMzxckf4UcZJE2-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-69" value="Each process receive sorted chuck from a process with higher rank" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-72" target="nDUVULAMzxckf4UcZJE2-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-72" value="Merge local chunk with received chunk" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="880" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-81" target="nDUVULAMzxckf4UcZJE2-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-81" value="Report results and time taken" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-86" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nDUVULAMzxckf4UcZJE2-83" target="nDUVULAMzxckf4UcZJE2-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-83" value="Finalize MPI" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nDUVULAMzxckf4UcZJE2-85" value="End" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="960" width="60" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
