@@ -1,11 +1,9 @@
-// C program to implement the Quick Sort
-// Algorithm using MPI
+// C program to implement the Quick Sort Algorithm using MPI
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-// using namespace std;
 
 // Function to swap two numbers
 void swap(int *arr, int i, int j)
@@ -26,8 +24,8 @@ void quicksort(int *arr, int start, int end)
     if (end <= 1)
         return;
 
-    // Pick pivot and swap with first
-    // element Pivot is middle element
+    // Pick pivot and swap with first element 
+    // Pivot is middle element
     pivot = arr[start + end / 2];
     swap(arr, start, start + end / 2);
 
@@ -37,7 +35,6 @@ void quicksort(int *arr, int start, int end)
     // Iterate over the range [start, end]
     for (int i = start + 1; i < start + end; i++)
     {
-
         // Swap if the element is less
         // than the pivot element
         if (arr[i] < pivot)
@@ -95,7 +92,6 @@ int *merge(int *arr1, int n1, int *arr2, int n2)
     return result;
 }
 
-// Driver Code
 int main(int argc, char *argv[])
 {
     int number_of_elements;
@@ -108,10 +104,8 @@ int main(int argc, char *argv[])
 
     if (argc != 3)
     {
-        printf("Desired number of arguments are not their "
-               "in argv....\n");
-        printf("2 files required first one input and "
-               "second one output....\n");
+        printf("Desired number of arguments are not their in argv....\n");
+        printf("2 files required first one input and second one output....\n");
         exit(-1);
     }
 
@@ -120,9 +114,7 @@ int main(int argc, char *argv[])
 
     if (rc != MPI_SUCCESS)
     {
-        printf("Error in creating MPI "
-               "program.\n "
-               "Terminating......\n");
+        printf("Error in creating MPI program.\nTerminating......\n");
         MPI_Abort(MPI_COMM_WORLD, rc);
     }
 
@@ -143,24 +135,16 @@ int main(int argc, char *argv[])
 
         // Reading number of Elements in file ...
         // First Value in file is number of Elements
-        printf(
-            "Reading number of Elements From file ....\n");
+        printf("Reading number of Elements From file ....\n");
         fscanf(file, "%d", &number_of_elements);
-        printf("Number of Elements in the file is %d \n",
-               number_of_elements);
+        printf("Number of Elements in the file is %d \n", number_of_elements);
 
         // Computing chunk size
-        chunk_size = (number_of_elements %
-                          number_of_process ==
-                      0)
-                         ? (number_of_elements /
-                            number_of_process)
-                         : (number_of_elements /
-                            (number_of_process - 1));
+        chunk_size = (number_of_elements % number_of_process == 0)
+                        ? (number_of_elements / number_of_process)
+                        : (number_of_elements / (number_of_process - 1));
 
-        data = (int *)malloc(number_of_process *
-                             chunk_size *
-                             sizeof(int));
+        data = (int *)malloc(number_of_process * chunk_size *sizeof(int));
 
         // Reading the rest elements in which
         // operation is being performed
@@ -171,10 +155,7 @@ int main(int argc, char *argv[])
         }
 
         // Padding data with zero
-        for (int i = number_of_elements;
-             i < number_of_process *
-                     chunk_size;
-             i++)
+        for (int i = number_of_elements; i < number_of_process * chunk_size; i++)
         {
             data[i] = 0;
         }
@@ -185,7 +166,6 @@ int main(int argc, char *argv[])
         {
             printf("%d  ", data[i]);
         }
-
         printf("\n");
 
         fclose(file);
@@ -200,26 +180,19 @@ int main(int argc, char *argv[])
 
     // BroadCast the Size to all the
     // process from root process
-    MPI_Bcast(&number_of_elements, 1, MPI_INT, 0,
-              MPI_COMM_WORLD);
+    MPI_Bcast(&number_of_elements, 1, MPI_INT, 0, MPI_COMM_WORLD);
 
     // Computing chunk size
-    chunk_size = (number_of_elements %
-                      number_of_process ==
-                  0)
-                     ? (number_of_elements /
-                        number_of_process)
-                     : (number_of_elements /
-                        (number_of_process - 1));
+    chunk_size = (number_of_elements % number_of_process == 0)
+                    ? (number_of_elements / number_of_process)
+                    : (number_of_elements / (number_of_process - 1));
 
     // Calculating total size of chunk
     // according to bits
-    chunk = (int *)malloc(chunk_size *
-                          sizeof(int));
+    chunk = (int *)malloc(chunk_size * sizeof(int));
 
     // Scatter the chuck size data to all process
-    MPI_Scatter(data, chunk_size, MPI_INT, chunk,
-                chunk_size, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Scatter(data, chunk_size, MPI_INT, chunk, chunk_size, MPI_INT, 0, MPI_COMM_WORLD);
     free(data);
     data = NULL;
 
@@ -227,11 +200,9 @@ int main(int argc, char *argv[])
     // then sort them
     // using quick sort
 
-    own_chunk_size = (number_of_elements >=
-                      chunk_size * (rank_of_process + 1))
-                         ? chunk_size
-                         : (number_of_elements -
-                            chunk_size * rank_of_process);
+    own_chunk_size = (number_of_elements >= chunk_size * (rank_of_process + 1))
+                        ? chunk_size 
+                        : (number_of_elements -chunk_size * rank_of_process);
 
     // Sorting array with quick sort for every
     // chunk as called by process
@@ -250,18 +221,13 @@ int main(int argc, char *argv[])
         if (rank_of_process + step < number_of_process)
         {
             int received_chunk_size = (number_of_elements >= chunk_size * (rank_of_process + 2 * step))
-                                          ? (chunk_size * step)
-                                          : (number_of_elements - chunk_size * (rank_of_process + step));
+                                        ? (chunk_size * step)
+                                        : (number_of_elements - chunk_size * (rank_of_process + step));
             int *chunk_received;
-            chunk_received = (int *)malloc(
-                received_chunk_size * sizeof(int));
-            MPI_Recv(chunk_received, received_chunk_size,
-                     MPI_INT, rank_of_process + step, 0,
-                     MPI_COMM_WORLD, &status);
+            chunk_received = (int *)malloc(received_chunk_size * sizeof(int));
+            MPI_Recv(chunk_received, received_chunk_size, MPI_INT, rank_of_process + step, 0, MPI_COMM_WORLD, &status);
 
-            data = merge(chunk, own_chunk_size,
-                         chunk_received,
-                         received_chunk_size);
+            data = merge(chunk, own_chunk_size, chunk_received, received_chunk_size);
 
             free(chunk);
             free(chunk_received);
@@ -289,10 +255,7 @@ int main(int argc, char *argv[])
 
         // Printing total number of elements
         // in the file
-        fprintf(
-            file,
-            "Total number of Elements in the array : %d\n",
-            own_chunk_size);
+        fprintf(file, "Total number of Elements in the array : %d\n", own_chunk_size);
 
         // Printing the value of array in the file
         for (int i = 0; i < own_chunk_size; i++)
@@ -303,13 +266,10 @@ int main(int argc, char *argv[])
         // Closing the file
         fclose(file);
 
-        printf("\n\n\n\nResult printed in output.txt file "
-               "and shown below: \n");
+        printf("\n\n\n\nResult printed in output.txt file and shown below: \n");
 
         // For Printing in the terminal
-        printf("Total number of Elements given as input : "
-               "%d\n",
-               number_of_elements);
+        printf("Total number of Elements given as input : %d\n", number_of_elements);
         printf("Sorted array is: \n");
 
         for (int i = 0; i < number_of_elements; i++)
@@ -317,10 +277,7 @@ int main(int argc, char *argv[])
             printf("%d  ", chunk[i]);
         }
 
-        printf(
-            "\n\nQuicksort %d ints on %d procs: %f secs\n",
-            number_of_elements, number_of_process,
-            time_taken);
+        printf("\n\nQuicksort %d ints on %d procs: %f secs\n", number_of_elements, number_of_process, time_taken);
     }
 
     MPI_Finalize();
